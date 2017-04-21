@@ -1,0 +1,11 @@
+nav a {
+  font-weight: 500;
+  color: white;
+  padding: 0px 20px;
+  font-size:18px;
+  text-decoration: none;
+}
+
+nav{
+  margin-top:1%;
+}

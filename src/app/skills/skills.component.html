@@ -1,0 +1,13 @@
+  <div class="jumbotron" [ngStyle]="{'background-color': myColor}">>
+    <div class="jumbotron-text">
+             <h1 style="margin-top:-10%; margin-bottom:2%;">Technical Skills</h1>
+             <div class="container text-center">
+               <div class="row">
+                  <div *ngFor="let item of skills; let i=index;">
+                   <div class="clearfix" *ngIf="$i % 3 == 0"></div>
+                    <div class="item" [ngStyle]="{'background-color': boxColor}">{{item}}</div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>

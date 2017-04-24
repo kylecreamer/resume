@@ -1,3 +1,8 @@
-<p>
-  education works!
-</p>
+<div class="jumbotron" [ngStyle]="{'background-color': myColor}">
+   <div class="jumbotron-text">
+<div *ngFor="let item of education;">
+  <h2 style="padding-top:4%;">{{item.title}}</h2>
+    <h4>{{item.body}}</h4>
+</div>
+</div>
+</div>

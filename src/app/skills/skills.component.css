@@ -1,9 +1,40 @@
+@mixin max-width($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}
+.item {
+    background-color: tomato;
+    box-sizing: border-box;
+    padding:20px;
+    margin-left:45px;
+    margin-top:45px;
+    flex: 1;
+}
+
+@include max-width(992px) {
+    .item {
+        flex-basis: 25%;
+        background-color: red;
+    }
+}
+
+@include max-width(640px) {
+    .item {
+        flex-basis: 50%;
+        background-color: green;
+    }
+}
+
 /*JUMBOTRON*/
 .jumbotron {
-  height: 99vh; /*height to 100% of view height*/
   margin-bottom: 0; /*no bottom margin*/
-  display: flex;
-  flex-direction: column;
 }
 
 .jumbotron-text {

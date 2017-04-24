@@ -9,10 +9,12 @@ import { EducationComponent } from './education/education.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
 import {SharedColorService} from './sharedColor.service';
+import { SkillsComponent } from './skills/skills.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 const appRoutes: Routes = [
   { path: 'about', component: AboutComponent},
-  // { path: 'skills',component: SkillsComponent },
+  { path: 'skills', component: SkillsComponent },
   {  path: 'education', component: EducationComponent,},
   // { path: 'skills',component: HeroDetailComponent },
   // { path: 'skills',component: HeroDetailComponent },
@@ -22,9 +24,11 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    EducationComponent,
     NavigationComponent,
-    AboutComponent
+    EducationComponent,
+    AboutComponent,
+    SkillsComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,

@@ -7,11 +7,6 @@ import {SharedColorService} from '../sharedColor.service';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-//   myColor;
-// constructor(private sharedColor: SharedColorService)
-// {
-//     this.myColor = this.sharedColor.myColor;
-//   }
 myColor: string;
 constructor(private _sharedService: SharedColorService){}
 
@@ -19,6 +14,7 @@ ngOnInit() {
   this._sharedService.colorString$.subscribe(
     data => {
       this.myColor = data;
+          console.log("About received color: " + this.myColor + " Data: " + data );
     });
 }
 }

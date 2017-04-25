@@ -37,6 +37,13 @@
   margin-bottom: 0; /*no bottom margin*/
 }
 
+.jumbotron-noview {
+  height: 100%; /*height to 100% of view height*/
+  margin-bottom: 0; /*no bottom margin*/
+  display: flex;
+  flex-direction: column;
+}
+
 .jumbotron-text {
   /*TAGLINE UNDER NAME*/
   font-weight: 400;

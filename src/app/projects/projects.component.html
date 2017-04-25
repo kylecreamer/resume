@@ -1,11 +1,13 @@
 <div style="margin-top:-5%;" class="jumbotron-noview" [ngStyle]="{'background-color': myColor}">
    <div class="jumbotron-text">
-       <h1>Projects</h1>
+          <h1 class="hidden-sm-down">Projects</h1>
+          <h2 class="hidden-md-up" style="font-size:50px; margin-top:-17%;">Projects</h2>
       <div *ngFor="let item of projects;">
           <div class="container">
             <div class="job">
                 <div class="row">
-                  <h2 style="margin-top:1%;" class="col-sm-12"><a target="_blank" href="{{item.title}}">{{item.title}}</a></h2>
+                  <h2 style="margin-top:1%;" class="col-sm-12 hidden-sm-down"><a target="_blank" href="{{item.title}}">{{item.title}}</a></h2>
+                  <p style="margin-top:1%; font-size:20px; word-wrap: break-word;" class="col-sm-12 hidden-md-up"><a target="_blank" href="{{item.title}}">{{item.title}}</a></p>
                 </div>
                 <div class="row">
                   <div class="col-sm-10 offset-sm-1">

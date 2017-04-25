@@ -18,6 +18,15 @@
     flex: 1;
 }
 
+.item-mobile {
+    background-color: tomato;
+    box-sizing: border-box;
+    padding:10px;
+    margin-left:15px;
+    margin-top:15px;
+    flex: 1;
+}
+
 @include max-width(992px) {
     .item {
         flex-basis: 25%;

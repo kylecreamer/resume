@@ -1,6 +1,6 @@
 /*JUMBOTRON*/
-.jumbotron {
-  height: 99vh; /*height to 100% of view height*/
+.jumbotron-noview {
+  height: 100%; /*height to 100% of view height*/
   margin-bottom: 0; /*no bottom margin*/
   display: flex;
   flex-direction: column;

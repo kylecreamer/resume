@@ -1,7 +1,8 @@
   <div class="jumbotron" [ngStyle]="{'background-color': myColor}">>
     <div class="jumbotron-text">
-             <h1 style="margin-top:-10%; margin-bottom:2%;">Technical Skills</h1>
-             <div class="container text-center">
+             <h1  class="hidden-sm-down" style="margin-top:-10%; margin-bottom:2%;">Technical Skills</h1>
+             <h2  class="hidden-md-up" style="margin-top:-10%; margin-bottom:2%;">Technical Skills</h2>
+             <div class="container text-center hidden-sm-down">
                <div class="row">
                   <div *ngFor="let item of skills; let i=index;">
                    <div class="clearfix" *ngIf="$i % 3 == 0"></div>
@@ -9,5 +10,15 @@
                   </div>
                 </div>
               </div>
-        </div>
+              <div class="container text-center hidden-md-up">
+                <div class="row">
+                  <div *ngFor="let item of skills; let i=index;">
+                    <div class="clearfix" *ngIf="$i % 3 == 0"></div>
+                      <div class="item-mobile col-xs-4" [ngStyle]="{'background-color': boxColor}">
+                        <p>{{item}}<p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
       </div>
+    </div>

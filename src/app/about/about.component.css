@@ -35,14 +35,14 @@
 .li-social-links {
   display: inline-block;
   list-style: none;
-  padding-right:3%;
+  padding-right:2%;
 }
 
 .social {
   font-size: 2em;
   color: white;
-  padding-right: 35px;
-  margin-right:25px;
+  padding-right: 20px;
+  margin-right:15px;
 }
 
 /*SKILLS*/

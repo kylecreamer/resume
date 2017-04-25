@@ -11,13 +11,14 @@ import { AboutComponent } from './about/about.component';
 import {SharedColorService} from './sharedColor.service';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 const appRoutes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'skills', component: SkillsComponent },
   {  path: 'education', component: EducationComponent,},
-  // { path: 'skills',component: HeroDetailComponent },
-  // { path: 'skills',component: HeroDetailComponent },
+  { path: 'experience',component: ExperienceComponent },
+  { path: 'projects',component: ProjectsComponent },
   { path: '**', component: AboutComponent }
 ];
 
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     EducationComponent,
     AboutComponent,
     SkillsComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
